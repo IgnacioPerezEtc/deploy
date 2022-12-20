@@ -1,0 +1,98 @@
+.pokemonContainer {
+  text-decoration: none;
+  display: inline-block;
+  margin: 50px;
+  padding: 30px;
+  width: 20em;
+  background-color: #fff;
+  border-radius: 18px;
+}
+.pokemonImg {
+  width: 15em;
+  height: 15em;
+}
+.type {
+  align-items: center;
+  margin: 5px;
+}
+.bodyDetail {
+  background-image: url("https://i.blogs.es/02534d/rubizafiro/1366_2000.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  height: 120%;
+  position: absolute;
+}
+.p-item {
+  margin: 5px;
+  font-size: 1.3em;
+  color: #4c2882;
+}
+.span-item {
+  color: #4c2882;
+  font-size: 1.3em;
+}
+.NavLinkContainerDetail {
+  margin-bottom: -93px;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+}
+.NavLinkDetail {
+  margin: 10px;
+  padding: 12px 12px;
+  display: inline-block;
+  border: none;
+  background-color: #1c3651;
+  color: #fff;
+  border-radius: 2px;
+  text-decoration: none;
+}
+.NavLinkDetail:hover {
+  background-color: #001028;
+}
+.loadingContainer {
+  background-image: url("https://i.blogs.es/02534d/rubizafiro/1366_2000.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.container{
+  margin: 70px;
+}
+.loadingH2{
+  font-size: 45px;
+}
+.loadingImgContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buttonDelete{
+  margin: 10px;
+  padding: 10px 12px;
+  display: inline-block;
+  border: none;
+  background-color: #1c3651;
+  color: #fff;
+  border-radius: 2px;
+}
+.buttonDelete:hover{
+  background-color: #001028;
+}
+.buttonEdit{
+  padding: 9.5px;
+  font-size: 15px;
+  border: none;
+  background-color: #1c3651;
+  color: #fff;
+  border-radius: 2px;
+  text-decoration: none;
+}
+.buttonEdit:hover{
+  background-color: #001028;
+}

@@ -1,0 +1,25 @@
+.pokemonImg {
+  width: 12em;
+  height: 10.5em;
+  border-radius: 5px;
+}
+.pokemonContainer {
+  text-decoration: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 50px;
+  padding: 30px;
+  width: 15em;
+  background-color: #fff;
+  border-radius: 18px;
+}
+.pokemonTitle {
+  margin-bottom: 30px;
+  color: #4c2882;
+}
+.type {
+  display: inline-block;
+  align-items: center;
+  margin: 20px 10px 10px 10px;
+  color: #4c2882;
+}

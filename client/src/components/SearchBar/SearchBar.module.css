@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+}
+.inputSearchBar {
+  margin: 10px;
+margin-left: -35px;
+  margin-right: 0;
+  padding: 1.2em 10em;
+  outline: none;
+  color: #000;
+}
+.inputHome {
+  outline: none;
+}
+
+.btnSearchBar {
+  padding: 1.32em;
+  background: #1c3651;
+  border: none;
+  margin-right: -44px;
+  color: #fff;
+}
+.inputHome {
+  background: #1c3651;
+  color: #fff;
+  display: inline-block;
+  padding: 9px 15px;
+  text-decoration: none;
+  align-items: right;
+  margin: 10px;
+  border-radius: 20px;
+  border: none;
+}
+.btnForm {
+  position: relative;
+  background: #1c3651;
+  color: #fff;
+  display: inline-block;
+  margin-left: -120px;
+  padding: 15px 15px;
+  text-decoration: none;
+  border-radius: 20px;
+  margin: 10px;
+}
+.btnSearchBar:hover {
+  background-color: #001028;
+}
+.navContainer {
+  padding: 6px;
+}
+
+.inputHome:hover {
+  background-color: #001028;
+  cursor: pointer;
+}
+.btnForm:hover {
+  background-color: #001028;
+  cursor: pointer;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+}
+.NavLinkContainer {
+  padding: 10px;
+}
+.NavLinkToLanding {
+  background: #1c3651;
+  color: #fff;
+  padding: 12px;
+  margin-bottom: 20px;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 13px;
+  align-items: right;
+}
+.NavLinkToLanding:hover {
+  background-color: #001028;
+}
+.refresh {
+  background: #1c3651;
+  position: relative;
+    color: #fff;
+  display: inline-block;
+  padding: 11px 15px;
+  text-decoration: none;
+
+  margin: 10px;
+  border-radius: 20px;
+  border: none;
+}
+.refresh:hover {
+  background-color: #001028;
+  cursor: pointer;
+}
+
+.pForm {
+  background: #1c3651;
+  color: #fff;
+  display: inline-block;
+  margin: 10px;
+  border: none;
+}
+.selectTypes {
+  display: inline-block;
+  background: #1c3651;
+  padding: 0 8px;
+  border-radius: 20px;
+}
+.buttonDelete {
+  padding: 0.3em;
+  margin: 0.3em;
+  background-color: #db0c0c;
+  color: #fff;
+  border: none;
+  border-radius: 2em;
+}
