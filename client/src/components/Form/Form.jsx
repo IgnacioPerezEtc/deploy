@@ -273,7 +273,7 @@ const Form = () => {
                 defaultValue="title"
               >
                 <option value="title" disabled name="Tipos">
-                  Tipos
+                  Types
                 </option>
                 {types?.map((type, index) => {
                   return (

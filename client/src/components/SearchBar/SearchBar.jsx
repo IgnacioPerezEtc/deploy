@@ -162,7 +162,7 @@ export const SearchBar = ({ setCurrentPage }) => {
             className={style.inputHome}
           >
             <option value="title" disabled name="Tipos">
-              Filtrado por tipo
+              Filter by type
             </option>
             {types.map((type) => {
               return (
