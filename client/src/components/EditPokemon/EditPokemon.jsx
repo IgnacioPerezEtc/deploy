@@ -1,11 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
-import {
-  editPokemon,
-  getAllPokemons,
-  getTypes,
-} from "../../redux/actions";
-import "./editPokemon.css"
+import { editPokemon, getAllPokemons, getTypes } from "../../redux/actions";
+import "./editPokemon.css";
 import { useHistory } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 const EditPokemon = () => {
@@ -17,7 +13,7 @@ const EditPokemon = () => {
       /[0-9]/.test(input.name) ||
       /[/_*@#%!&"?¿`+{},.:;()+-]/.test(input.name)
     ) {
-      errors.name = "El nombre no debe contener caracteres especiales";
+      errors.name = "The name can`t have special characters";
     }
     if (
       !input.hp ||
@@ -25,24 +21,24 @@ const EditPokemon = () => {
       input.hp > 150 ||
       /[/_*@#%!&"?¿`+{},.:;()+-]/.test(input.hp)
     ) {
-      errors.hp = "Debe tener hp entre 1 - 150";
+      errors.hp = "Must have hp between 1 - 150";
     }
 
     if (!input.attack || input.attack < 0 || input.attack > 150) {
-      errors.attack = "Debe tener ataque entre 1 - 150";
+      errors.attack = "Must have attack between 1 - 150";
     }
 
     if (!input.defense || input.defense < 0 || input.defense > 150) {
-      errors.defense = "Debe tener defensa entre 1 - 150";
+      errors.defense = "Must have defense between 1 - 150";
     }
     if (!input.speed || input.speed < 0 || input.speed > 150) {
-      errors.speed = "Debe tener velocidad entre 1 - 150";
+      errors.speed = "Must have speed between 1 - 150";
     }
     if (!input.weight || input.weight < 0 || input.weight > 500) {
-      errors.weight = "Debe tener peso entre 1-500";
+      errors.weight = "Must have weight between 1 - 150";
     }
     if (!input.height || input.height < 0 || input.height > 500) {
-      errors.height = "Debe tener altura entre 1-500";
+      errors.height = "Must have height between 1 - 150";
     }
     return errors;
   }
@@ -84,7 +80,7 @@ const EditPokemon = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     dispatch(editPokemon(pokemonDetail.id, input));
-    alert("El pokemon se ha editado con exito");
+    alert("The pokemon has edited successfully");
     setInput({
       name: "",
       hp: "",
@@ -130,14 +126,14 @@ const EditPokemon = () => {
         <div className="form">
           <div className="div-container">
             <div>
-              <h3>Crea tu propio Pokemon</h3>
+              <h3>Create your own Pokemon</h3>
             </div>
 
             <div>
               <div>
                 <div>
                   <div>
-                    <div className="h2Form">Nombre</div>
+                    <div className="h2Form">Name</div>
                     <input
                       autoComplete="off"
                       className="inputItem"
@@ -147,7 +143,7 @@ const EditPokemon = () => {
                         handleChange(event);
                       }}
                       type="text"
-                      placeholder="Nombre"
+                      placeholder="Name"
                     />{" "}
                     {errors.name && <div className="Errors">{errors.name}</div>}
                     <div className="h2Form">Hp</div>
@@ -263,7 +259,7 @@ const EditPokemon = () => {
                 defaultValue="title"
               >
                 <option value="title" disabled name="Tipos">
-                  Tipos
+                  Types
                 </option>
                 {types?.map((type, index) => {
                   return (
@@ -294,8 +290,7 @@ const EditPokemon = () => {
               <br />
               <input
                 type="submit"
-                value="Editar"
-               
+                value="Edit"
                 onClick={(event) => {
                   handleSubmit(event);
                 }}

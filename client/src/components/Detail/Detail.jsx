@@ -11,13 +11,13 @@ const Detail = () => {
   const pokemonDetail = useSelector((state) => state.pokemonDetail);
   const handleDelete = (event) => {
     dispatch(deletePokemon(pokemonDetail.id));
-    alert("Se ha eliminado correctamente el pokemon");
+    alert("the Pokemon was eliminated successfully");
     history.push("/home");
     window.location.reload();
   };
   useEffect(() => {
     dispatch(getPokemonById(id));
-      // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   if (
     pokemonDetail.hasOwnProperty("name") &&
@@ -28,7 +28,7 @@ const Detail = () => {
         <div className="bodyDetail">
           <div className="NavLinkContainerDetail">
             <NavLink className="NavLinkDetail" to="/home">
-              Volver a Home
+              Back to Home
             </NavLink>
           </div>
           <div className="pokemonContainer">
@@ -53,14 +53,24 @@ const Detail = () => {
                     {type.name.charAt(0).toUpperCase() + type.name.slice(1)}
                   </span>
                 );
-              })}</p>
-               {pokemonDetail.createdInDb && (
+              })}
+            </p>
+            {pokemonDetail.createdInDb && (
               <div>
-                <button className="buttonDelete" onClick={(event) => handleDelete(event)}>Delete</button>
-                <NavLink className="buttonEdit" to={`/edit/${pokemonDetail.id}`}>Edit</NavLink>
+                <button
+                  className="buttonDelete"
+                  onClick={(event) => handleDelete(event)}
+                >
+                  Delete
+                </button>
+                <NavLink
+                  className="buttonEdit"
+                  to={`/edit/${pokemonDetail.id}`}
+                >
+                  Edit
+                </NavLink>
               </div>
             )}
-            
           </div>
         </div>
       </>
@@ -69,15 +79,14 @@ const Detail = () => {
     return (
       <div className="loadingContainer">
         <div className="container">
-            <h1 className="loadingH2">Loading</h1>
-        <img
-          className="loadingImg"
-          src="https://i.pinimg.com/originals/66/89/dc/6689dc331be27e66349ce9a4d15ddff3.gif"
-          alt=""
-        />
-      </div>
+          <h1 className="loadingH2">Loading</h1>
+          <img
+            className="loadingImg"
+            src="https://i.pinimg.com/originals/66/89/dc/6689dc331be27e66349ce9a4d15ddff3.gif"
+            alt=""
+          />
         </div>
-      
+      </div>
     );
   }
 };

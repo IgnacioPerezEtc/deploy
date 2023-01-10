@@ -64,7 +64,7 @@ const Form = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     dispatch(createPokemon(input));
-    alert("se ha creado con exito");
+    alert("The pokemon has created successfully");
     setInput({
       name: "",
       hp: "",
@@ -304,7 +304,7 @@ const Form = () => {
               <br />
               <input
                 type="submit"
-                value="Crear"
+                value="Create"
                 disabled={ButtonDisabled}
                 onClick={(event) => {
                   handleSubmit(event);
