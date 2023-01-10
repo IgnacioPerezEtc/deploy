@@ -10,8 +10,9 @@ const LandingPage = () => {
             <h1 className={style.titleLandingPage}>Bienvenido a tu Pokedex!</h1>
             <br />
             <p className={style.p}>
-              Ten cuidado ahi afuera, pokemons salvajes viven ahi afuera,
-              necesitas uno para tu propia protecccion
+            Ten cuidado ahí afuera, pokemons salvajes viven ahí  afuera,
+              Necesitas uno para tu propia protección
+
             </p>
             <br />
             <NavLink className={style.btnLandingPage} to="/home">
