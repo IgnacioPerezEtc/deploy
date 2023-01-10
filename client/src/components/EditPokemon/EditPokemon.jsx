@@ -80,7 +80,7 @@ const EditPokemon = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     dispatch(editPokemon(pokemonDetail.id, input));
-    alert("The pokemon has edited successfully");
+    alert("The pokemon was edited successfully");
     setInput({
       name: "",
       hp: "",
