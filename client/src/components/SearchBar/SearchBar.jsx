@@ -105,12 +105,12 @@ export const SearchBar = ({ setCurrentPage }) => {
               handleSubmit(event);
             }}
           >
-            Buscar
+            Search
           </button>
         </div>
 
         <NavLink className={style.btnForm} to="/form">
-          Crear
+          Create
         </NavLink>
       </div>
       <div className={style.flexContainer}>
@@ -121,12 +121,12 @@ export const SearchBar = ({ setCurrentPage }) => {
             className={style.inputHome}
           >
             <option value="title" disabled name="Alfabetico">
-              Ordenar por
+              Order by
             </option>
             <option value="AZ">A-Z</option>
             <option value="ZA">Z-A</option>
-            <option value="strong">Desde el mas fuerte</option>
-            <option value="weak">Desde el mas debil</option>
+            <option value="strong">Strong</option>
+            <option value="weak">Weak</option>
           </select>
           <select disabled={selectDisabledExist}
             onChange={(event) => {
@@ -135,9 +135,9 @@ export const SearchBar = ({ setCurrentPage }) => {
             defaultValue="title"
             className={style.inputHome}
           >
-            <option value="Todos">Ordenar por todos</option>
-            <option value="Existente">Ordenar por existente</option>
-            <option value="Creado">Ordenar por creado</option>
+            <option value="Todos">Order by all</option>
+            <option value="Existente">Order by existing</option>
+            <option value="Creado">Order by created</option>
           </select>
           {selectTypes.exist?.map((exist, index) => {
             return (
